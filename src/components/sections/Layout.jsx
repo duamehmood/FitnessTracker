@@ -4,9 +4,8 @@ import Footer from './Footer'
 
 const Layout = () => {
   return (
-    <div>
-        <Navbar/>
-        <Outlet/>
+    <div className='flex flex-col min-h-screen'>
+        <Outlet className="felx grow"/>
         <Footer/>
     </div>
   )

@@ -35,7 +35,7 @@ const Routes = createBrowserRouter([
         element: <AddExercise />,
       },
       {
-        path: "/exerciseDetails/:id",
+        path: "/exerciseDetails/",
         element: <ExerciseDetails />,
       },
       {
@@ -47,7 +47,7 @@ const Routes = createBrowserRouter([
         element: <AddWorkout />,
       },
       {
-        path: "/workoutDetails/:id",
+        path: "/workoutDetails/",
         element: <WorkOutDetails />,
       },
       {
