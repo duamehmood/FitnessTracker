@@ -7,8 +7,8 @@ const Dashboard = () => {
     <div>
       
        <Navbar title="FitTracker Pro" >
-        <RiSettings2Line size="40" className="border-1 border-[#4B5563] text-white p-[8px] rounded-md "/>
-        <button className="bg-[#22C55E] text-white px-[16px] py-[10px] font-[600] text-[14px] rounded-md">Start Workout</button>
+        <RiSettings2Line className=" border-1 border-[#4B5563] text-white md:p-[8px] p-[6px] rounded-md md:w-[40px] w-[30px] md:h-[40px] h-[30px]"/>
+        <button className="bg-[#22C55E] text-white md:px-[16px] px-[8px] md:py-[10px] py-[4px] font-[600] text-[14px] cursor-pointer rounded-md">Start Workout</button>
       </Navbar>
 
     </div>

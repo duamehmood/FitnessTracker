@@ -1,47 +1,51 @@
   @import "tailwindcss";
 
- /* .grid-bg{
+  /* .grid-bg{
     background-image: linear-gradient(rgba(174, 134, 176, 0.5) 1px, transparent 2px),linear-gradient(90deg, rgba(174, 134, 176, 0.5) 1px, transparent 2px);
     background-size: 60px 60px;
   } */
 
- @theme inline {
-   --color-primary: #0F172A;
-   --color-secondary: #22C55E;
- }
+  @theme inline {
+    --color-primary: #0F172A;
+    --color-secondary: #22C55E;
+  }
 
- .container {
-   padding: 0 20px;
- }
+  .container {
+    padding: 0 16px;
+  }
 
- @media (min-width: 40rem) {
-   .container {
-     max-width: 37rem;
-   }
- }
+  @media (min-width: 40rem) {
+    .container {
+      max-width: 37rem;
+    }
+  }
 
- @media (min-width: 48rem) {
-   .container {
-     max-width: 45rem;
-   }
- }
+  @media (min-width: 48rem) {
+    .container {
+      max-width: 45rem;
+    }
+  }
 
- @media (min-width: 64rem) {
-   .container {
-     max-width: 61rem;
-   }
- }
+  @media (min-width: 64rem) {
+    .container {
+      max-width: 61rem;
+      padding: 0 20px;
 
- @media (min-width: 80rem) {
-   .container {
-     max-width: 74rem;
-   }
- }
+    }
+  }
 
- @media (min-width: 96rem) {
-   .container {
-     max-width: 90rem;
-     padding: 0 40px;
+  @media (min-width: 80rem) {
+    .container {
+      max-width: 74rem;
+      padding: 0 20px;
 
-   }
- }
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .container {
+      max-width: 90rem;
+      padding: 0 40px;
+
+    }
+  }

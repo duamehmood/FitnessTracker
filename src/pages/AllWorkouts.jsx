@@ -6,8 +6,8 @@ const AllWorkouts = () => {
   return (
     <div>
      <Navbar title=" All Workouts" >
-        <button ><RiSearchLine size="35" className="border-2 text-[#22C55E80] p-[8px] rounded-md " /> </button>
-        <button ><RiAddLine size="35" className="border-2 text-[#3B82F680] p-[8px] rounded-md " /> </button>
+        <button ><RiSearchLine className="border-2  w-[30px] md:w-[35px] h-[30px] md:h-[35px]  md:p-[8px] p-[5px] text-[#22C55E] rounded-md " /> </button>
+        <button ><RiAddLine  className="border-2  w-[30px] md:w-[35px] h-[30px] md:h-[35px] text-[#2563EB] md:p-[8px] p-[5px] rounded-md " /> </button>
       </Navbar>
     </div>
   )
