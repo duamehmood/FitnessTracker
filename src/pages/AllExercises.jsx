@@ -12,7 +12,7 @@ const AllExercises = () => {
       "icon": "🏃‍♂️",
       "primaryMuscles": "Chest",
       "secondaryMuscles": "Triceps, Shoulders",
-      "caloriesPerMin": 8,     
+      "caloriesPerMin": 8,
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@ const AllExercises = () => {
       "icon": "🏃",
       "primaryMuscles": "Quads",
       "secondaryMuscles": "Glutes, Hamstrings",
-      "caloriesPerMin": 6,       
+      "caloriesPerMin": 6,
     },
     {
       "id": 3,
@@ -39,15 +39,15 @@ const AllExercises = () => {
       "icon": "🔥",
       "primaryMuscles": "Back",
       "secondaryMuscles": "Biceps, Core",
-      "caloriesPerMin": 7,   
+      "caloriesPerMin": 7,
     },
-    
+
   ]
-  
+
   return (
     <div>
       <Navbar title="Exercise Library" >
-        <button> <RiCloseFill className='text-[#9CA3AF]' /> </button>
+        <button className='p-1 hover:bg-red-500 text-[#9CA3AF]  hover:text-white transition-all duration-200  rounded'> <RiCloseFill /> </button>
       </Navbar>
 
       <div className='bg-primary py-[50px]'>
@@ -81,7 +81,18 @@ const AllExercises = () => {
             {exercises.map((exercise, index) => (
               <AllExercisesCard key={exercise.id} exercise={exercise} index={index} />
             ))}
+            <div className='p-[25px] bg-[#1F293766] border-dashed border-[#37415166] border-2 hover:border-[#22C55E80]  rounded-2xl transition-all text-center'>
+              <div className='rounded-lg w-12 h-12 flex justify-center items-center border border-[#22C55E4D] bg-gradient-to-r from-[#22C55E33] to-[#16A34A33] mx-auto'>
+                <span className='text-2xl text-[#4ADE80]'> <RiAddLine /> </span>
+              </div>
+              <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white">
+                Add Custom Exercise
+              </h4>
+              <p className='font-[400] text-[13px] pb-[16px] text-[#9CA3AF] '>Create your own exercise with custom parameters</p>
+              <button className="  bg-[#22C55E] text-white px-[16px] py-[10px] font-[600] text-[14px] rounded-md">Create Exercise</button>
+            </div>
           </div>
+
 
         </div>
       </div>
