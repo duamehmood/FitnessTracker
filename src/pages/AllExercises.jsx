@@ -1,7 +1,82 @@
 import { RiCloseFill, RiAddLine } from '@remixicon/react'
 import Navbar from '../components/sections/Navbar'
+import AllExercisesCard from '../components/utils/AllExercisesCard'
 
 const AllExercises = () => {
+
+  const exercises = [
+    {
+      "id": 1,
+      "title": "Bench Press",
+      "type": "Compound",
+      "icon": "🏃‍♂️",
+      "primaryMuscles": "Chest",
+      "secondaryMuscles": "Triceps, Shoulders",
+      "caloriesPerMin": 8,
+      "bgGradientFrom": "#22C55E33",
+      "bgGradientTo": "#16A34A33",
+      "borderColor": "#22C55E4D",
+      "badgeColor": "#4ADE80",
+      "badgeBg": "#22C55E33",
+      "hoverBorder": "#22C55E80"
+    },
+    {
+      "id": 2,
+      "title": "Squats",
+      "type": "Cardio",
+      "icon": "🏃",
+      "primaryMuscles": "Quads",
+      "secondaryMuscles": "Glutes, Hamstrings",
+      "caloriesPerMin": 6,
+      "bgGradientFrom": "#3B82F633",
+      "bgGradientTo": "#2563EB33",
+      "borderColor": "#3B82F64D",
+      "badgeColor": "#FB923C",
+      "badgeBg": "#F9731633",
+      "hoverBorder": "#3B82F680"
+    },
+    {
+      "id": 3,
+      "title": "Deadlift",
+      "type": "Isolation",
+      "icon": "💪",
+      "primaryMuscles": "Back",
+      "secondaryMuscles": "Glutes, Hamstrings",
+      "caloriesPerMin": 10,
+      "bgGradientFrom": "#A855F733",
+      "bgGradientTo": "#9333EA33",
+      "borderColor": "#A855F74D",
+      "badgeColor": "#60A5FA",
+      "badgeBg": "#3B82F633",
+      "hoverBorder": "#A855F780"
+    },
+    {
+      "id": 4,
+      "title": "Pull-ups",
+      "type": "Compound",
+      "icon": "🔥",
+      "primaryMuscles": "Back",
+      "secondaryMuscles": "Biceps, Core",
+      "caloriesPerMin": 7,
+      "bgGradientFrom": "#06B6D433",
+      "bgGradientTo": "#0891B233",
+      "borderColor": "#06B6D44D",
+      "badgeColor": "#4ADE80",
+      "badgeBg": "#22C55E33",
+      "hoverBorder": "#06B6D480"
+    },
+    {
+      "id": 5,
+      "title": "Add Custom Exercise",
+      "type": "Custom",
+      "icon": <RiAddLine className="text-[#4ADE80]"/>,
+      "bgGradientFrom": "#22C55E33",
+      "bgGradientTo": "#16A34A33",
+      "borderColor": "#22C55E4D",
+      "hoverBorder": "#22C55E80"
+    }
+  ]
+  
   return (
     <div>
       <Navbar title="Exercise Library" >
@@ -36,79 +111,9 @@ const AllExercises = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <div className="p-[25px] bg-[#1F293766] border border-[#37415166] hover:border-[#22C55E80] rounded-2xl transition-all ">
-              <div className="flex items-start justify-between">
-                <div className="bg-gradient-to-r from-[#22C55E33] to-[#16A34A33] border border-[#22C55E4D] rounded-lg w-12 h-12 flex justify-center items-center  ">
-                  <span className="text-2xl">🏃‍♂️</span>
-                </div>
-                <span className="text-[12px] font-[400] text-[#4ADE80] px-[12px] py-[6px] bg-[#22C55E33] rounded-full ">Compound</span>
-              </div>
-              <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px]  text-white ">Bench Press</h4>
-              <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px] ">Primary: Chest | Secondary: Triceps, Shoulders</p>
-              <div className="flex items-center justify-between">
-                <p className="text-[11px] font-[400] text-[#6B7280] ">~8 cal/min</p>
-                <RiAddLine size="20" className='text-[#60A5FA]' />
-              </div>
-            </div>
-
-            <div className="p-[25px] bg-[#1F293766] border border-[#37415166] hover:border-[#3B82F680] rounded-2xl  transition-all">
-              <div className="flex items-start justify-between">
-                <div className="bg-gradient-to-r from-[#3B82F633] to-[#2563EB33] border border-[#3B82F64D] rounded-lg w-12 h-12 flex justify-center items-center  ">
-                  <span className="text-2xl">🏃</span>
-                </div>
-                <span className="text-[12px] font-[400] text-[#FB923C] px-[12px] py-[6px] bg-[#F9731633] rounded-full ">Cardio</span>
-              </div>
-              <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white ">Squats</h4>
-              <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px] ">Primary: Quads | Secondary: Glutes, Hamstrings</p>
-              <div className="flex items-center justify-between" >
-                <p className="text-[11px] font-[400] text-[#6B7280] ">~6 cal/min</p>
-                <RiAddLine size="20" className='text-[#60A5FA]' />
-              </div>
-            </div>
-
-            <div className="p-[25px] bg-[#1F293766] border border-[#37415166] hover:border-[#A855F780] rounded-2xl  transition-all">
-              <div className="flex items-start justify-between">
-                <div className="bg-gradient-to-r from-[#A855F733] to-[#9333EA33] border border-[#A855F74D] rounded-lg w-12 h-12 flex justify-center items-center  ">
-                  <span className="text-2xl">💪</span>
-                </div>
-                <span className="text-[12px] font-[400] text-[#60A5FA] px-[12px] py-[6px] bg-[#3B82F633] rounded-full ">Isolation</span>
-              </div>
-              <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white ">Deadlift</h4>
-              <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px] ">Primary: Back | Secondary: Glutes, Hamstrings</p>
-              <div className="flex items-center justify-between">
-                <p className="text-[11px] font-[400] text-[#6B7280] ">~10 cal/min</p>
-                <RiAddLine size="20" className='text-[#60A5FA]' />
-              </div>
-            </div>
-
-            <div className="p-[25px] bg-[#1F293766] border border-[#37415166] hover:border-[#06B6D480] rounded-2xl transition-all">
-              <div className="flex items-start justify-between">
-                <div className="bg-gradient-to-r from-[#06B6D433] to-[#0891B233] border border-[#06B6D44D] rounded-lg w-12 h-12 flex justify-center items-center  ">
-                  <span className="text-2xl">🔥</span>
-                </div>
-                <span className="text-[12px] font-[400] text-[#4ADE80] px-[12px] py-[6px] bg-[#22C55E33] rounded-full ">Compound</span>
-              </div>
-              <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white ">Pull-ups</h4>
-              <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px] ">Primary: Back | Secondary: Biceps, Core</p>
-              <div className="flex items-center justify-between">
-                <p className="text-[11px] font-[400] text-[#6B7280] ">~7 cal/min</p>
-                <RiAddLine size="20" className='text-[#60A5FA]' />
-              </div>
-            </div>
-
-            <div className="p-[25px] bg-[#1F293766] border-2 border-dashed border-[#37415166] hover:border-[#22C55E80] rounded-2xl text-center  transition-all">
-              <div className="flex justify-center">
-                <div className="bg-gradient-to-r from-[#22C55E33] to-[#16A34A33] border border-[#22C55E4D] rounded-lg w-12 h-12 flex justify-center items-center  ">
-                  <span className="text-2xl"><RiAddLine className="text-[#4ADE80]" /></span>
-                </div>
-              </div>
-              <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white ">Add Custom Exercise</h4>
-              <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px] ">Create your own exercise with custom parameters</p>
-              <button className="hidden md:inline-flex bg-[#22C55E] text-white px-[16px] py-[10px] font-[700] text-[13  px] rounded-md"> Create Exercise</button>
-
-            </div>
-
+            {exercises.map((exercise) => (
+              <AllExercisesCard key={exercise.id} exercise={exercise} />
+            ))}
           </div>
 
         </div>
