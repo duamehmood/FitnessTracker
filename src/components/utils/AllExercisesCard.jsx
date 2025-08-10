@@ -56,7 +56,7 @@ const AllExercisesCard = ({ exercise, index }) => {
         ) : (
           <span />
         )}
-        <button className="text-[#60A5FA] hover:text-[#8bbfdd] transition-colors duration-200"><RiAddLine size="20"/></button>
+        <button className="text-[#60A5FA] hover:text-[#a3d7f5] transition-colors duration-200 cursor-pointer"><RiAddLine size="20"/></button>
       </div>
     </div>
   )
