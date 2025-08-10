@@ -12,13 +12,7 @@ const AllExercises = () => {
       "icon": "🏃‍♂️",
       "primaryMuscles": "Chest",
       "secondaryMuscles": "Triceps, Shoulders",
-      "caloriesPerMin": 8,
-      "bgGradientFrom": "#22C55E33",
-      "bgGradientTo": "#16A34A33",
-      "borderColor": "#22C55E4D",
-      "badgeColor": "#4ADE80",
-      "badgeBg": "#22C55E33",
-      "hoverBorder": "#22C55E80"
+      "caloriesPerMin": 8,     
     },
     {
       "id": 2,
@@ -27,13 +21,7 @@ const AllExercises = () => {
       "icon": "🏃",
       "primaryMuscles": "Quads",
       "secondaryMuscles": "Glutes, Hamstrings",
-      "caloriesPerMin": 6,
-      "bgGradientFrom": "#3B82F633",
-      "bgGradientTo": "#2563EB33",
-      "borderColor": "#3B82F64D",
-      "badgeColor": "#FB923C",
-      "badgeBg": "#F9731633",
-      "hoverBorder": "#3B82F680"
+      "caloriesPerMin": 6,       
     },
     {
       "id": 3,
@@ -43,12 +31,6 @@ const AllExercises = () => {
       "primaryMuscles": "Back",
       "secondaryMuscles": "Glutes, Hamstrings",
       "caloriesPerMin": 10,
-      "bgGradientFrom": "#A855F733",
-      "bgGradientTo": "#9333EA33",
-      "borderColor": "#A855F74D",
-      "badgeColor": "#60A5FA",
-      "badgeBg": "#3B82F633",
-      "hoverBorder": "#A855F780"
     },
     {
       "id": 4,
@@ -57,24 +39,9 @@ const AllExercises = () => {
       "icon": "🔥",
       "primaryMuscles": "Back",
       "secondaryMuscles": "Biceps, Core",
-      "caloriesPerMin": 7,
-      "bgGradientFrom": "#06B6D433",
-      "bgGradientTo": "#0891B233",
-      "borderColor": "#06B6D44D",
-      "badgeColor": "#4ADE80",
-      "badgeBg": "#22C55E33",
-      "hoverBorder": "#06B6D480"
+      "caloriesPerMin": 7,   
     },
-    {
-      "id": 5,
-      "title": "Add Custom Exercise",
-      "type": "Custom",
-      "icon": <RiAddLine className="text-[#4ADE80]"/>,
-      "bgGradientFrom": "#22C55E33",
-      "bgGradientTo": "#16A34A33",
-      "borderColor": "#22C55E4D",
-      "hoverBorder": "#22C55E80"
-    }
+    
   ]
   
   return (
@@ -111,8 +78,8 @@ const AllExercises = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {exercises.map((exercise) => (
-              <AllExercisesCard key={exercise.id} exercise={exercise} />
+            {exercises.map((exercise, index) => (
+              <AllExercisesCard key={exercise.id} exercise={exercise} index={index} />
             ))}
           </div>
 
