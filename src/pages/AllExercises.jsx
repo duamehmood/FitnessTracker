@@ -9,7 +9,7 @@ const AllExercises = () => {
       "id": 1,
       "title": "Bench Press",
       "type": "Compound",
-      "icon": "🏃‍♂️",
+      "icon": "🏋️",
       "primaryMuscles": "Chest",
       "secondaryMuscles": "Triceps, Shoulders",
       "caloriesPerMin": 8,
@@ -61,7 +61,7 @@ const AllExercises = () => {
               </div>
               <h3 className='font-bold md:text-[20px] text-[18px] text-white'>Exercise Library</h3>
             </div>
-            <input type="text" placeholder='Search exercises...' className='px-4 py-3 rounded-xl bg-[#37415180] text-white placeholder-[#9CA3AF] font-[400] text-[15px] border border-[#4B556380] focus:outline-none focus:ring-2 focus:ring-[#3B82F64D] focus:border-green-500 md:w-[320px] w-200px ' />
+            <input type="text" placeholder='Search exercises...' className='px-4 py-3 rounded-xl bg-[#37415180] text-white placeholder-[#9CA3AF] font-[400] text-[15px] border border-[#4B556380] focus:outline-none focus:border-green-500 md:w-[320px] w-200px ' />
           </div>
 
           <div className='bg-[#1F293766] border border-[#37415166] my-[24px] rounded-2xl text-[#9CA3AF] font-[400] text-[14px] p-2  '>

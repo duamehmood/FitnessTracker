@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className='flex flex-col items-center gap-3'>
           <div className="flex items-center gap-2">
-            <span className="bg-secondary text-white font-[700]  w-6 h-6 flex items-center justify-center rounded">
+            <span className="bg-secondary text-white font-[700]  w-7 h-7 flex items-center justify-center rounded">
               F
             </span>
-            <span className="font-[700] text-[18px] text-secondary">FitTracker Pro</span>
+            <span className="font-[700] md:text-[22px] text-[20px] text-secondary">FitTracker Pro</span>
           </div>
           <p className='text-[#9CA3AF] text-[14px] font-[400]'>© 2025 FitTracker Pro. All rights reserved. Built for serious athletes.</p>
         </div>
