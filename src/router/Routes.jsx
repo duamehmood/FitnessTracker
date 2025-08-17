@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom"
+ import { createBrowserRouter } from "react-router-dom"
 import Dashboard from "../pages/Dashboard"
 import AllExercises from "../pages/AllExercises"
 import AddExercise from "../pages/AddExercise"
@@ -27,35 +27,43 @@ const Routes = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/allExercises",
+        path: "/exercises",
         element: <AllExercises />,
       },
       {
-        path: "/addExercise",
+        path: "/exercises/add",
         element: <AddExercise />,
       },
       {
-        path: "/exerciseDetails/",
+        path: "/exercises/edit/:id",
+        element: <AddExercise />,
+      },
+      {
+        path: "/exercises/:id",
         element: <ExerciseDetails />,
       },
       {
-        path: "/allWorkouts",
+        path: "/workouts",
         element: <AllWorkouts />,
       },
       {
-        path: "/addWorkout",
+        path: "/workouts/add",
         element: <AddWorkout />,
       },
       {
-        path: "/workoutDetails/",
+        path: "/workouts/edit/:id",
         element: <WorkOutDetails />,
       },
       {
-        path: "/recentWorkouts",
+        path: "/workouts/:id",
         element: <RecentWorkouts />,
       },
       {
-        path: "/activeWorkout",
+        path: "/workouts/active",
+        element: <ActiveWorkout />,
+      },
+      {
+        path: "/workouts/recent",
         element: <ActiveWorkout />,
       },
 

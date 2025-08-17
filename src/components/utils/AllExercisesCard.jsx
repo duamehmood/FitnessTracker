@@ -1,6 +1,5 @@
 
-
-import { RiAddLine } from '@remixicon/react'
+import { Link } from 'react-router-dom';
 
 const colorArr = [
   {
@@ -26,42 +25,46 @@ const colorArr = [
 ];
 
 const AllExercisesCard = ({ exercise, index }) => {
-
   const color = colorArr[index % 4];
 
   return (
     <div className={`p-[25px] bg-[#1F293766] border border-[#37415166] ${color.hover} rounded-2xl transition-all`}>
-      <div className="flex items-start justify-between">
-        <div className={`rounded-lg w-12 h-12 flex justify-center items-center ${color.icon.bg} border ${color.icon.border}`}>
-          <span className={`text-2xl ${color.icon.color}`}>{exercise.icon}</span>
+      <Link to={`/exercises/${exercise.id}`}>
+        <div className="flex items-start justify-between">
+          <div className={`rounded-lg w-12 h-12 flex justify-center items-center ${color.icon.bg} border ${color.icon.border}`}>
+            <span className={`text-2xl ${color.icon.color}`}>{exercise.icon}</span>
+          </div>
+          {exercise.type && (
+            <span className={`text-[12px] font-[400] ${color.badge.text} px-[12px] py-[6px] ${color.badge.bg} rounded-full`}>
+              {exercise.type}
+            </span>
+          )}
         </div>
 
-        <span className={`text-[12px] font-[400] ${color.badge.text} px-[12px] py-[6px] ${color.badge.bg} rounded-full`}>
-          {exercise.type}
-        </span>
-      </div>
-      <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white">
-        {exercise.title}
-      </h4>
-      {exercise.primaryMuscles && (
-        <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px]">
-          Primary: {exercise.primaryMuscles} | Secondary: {exercise.secondaryMuscles}
-        </p>
-      )}
-      <div className="flex items-center justify-between">
-        {exercise.caloriesPerMin ? (
-          <p className="text-[11px] font-[400] text-[#6B7280]">
-            ~{exercise.caloriesPerMin} cal/min
+        <h4 className="font-[700] md:text-[18px] text-[16px] pt-[16px] pb-[8px] text-white">
+          {exercise.title}
+        </h4>
+
+        {(exercise.primaryMuscle || exercise.secondaryMuscles) && (
+          <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px]">
+            {exercise.primaryMuscle && `Primary: ${exercise.primaryMuscle}`}
+            {exercise.secondaryMuscles && ` | Secondary: ${exercise.secondaryMuscles}`}
           </p>
-        ) : (
-          <span />
         )}
-        <button className="text-[#60A5FA] hover:text-[#a3d7f5] transition-colors duration-200 cursor-pointer"><RiAddLine size="20"/></button>
-      </div>
+
+        <div className="flex items-center justify-between">
+          {exercise.calories && (
+            <p className="text-[11px] font-[400] text-[#6B7280]">
+              ~{exercise.calories} cal/min
+            </p>
+          )}
+        </div>
+      </Link>
     </div>
   )
 }
 
-export default AllExercisesCard
+export default AllExercisesCard;
+
 
 
