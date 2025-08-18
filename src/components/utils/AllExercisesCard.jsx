@@ -1,4 +1,5 @@
 
+import { RiDeleteBin5Fill, RiDeleteBinLine } from '@remixicon/react';
 import { Link } from 'react-router-dom';
 
 const colorArr = [
@@ -58,6 +59,7 @@ const AllExercisesCard = ({ exercise, index }) => {
               ~{exercise.calories} cal/min
             </p>
           )}
+          <RiDeleteBinLine size="20" className='text-[#F87171] '/>
         </div>
       </Link>
     </div>
