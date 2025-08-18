@@ -10,6 +10,7 @@ import RecentWorkouts from "../pages/RecentWorkouts"
 import ActiveWorkout from "../pages/ActiveWorkout"
 import Home from "../pages/Home"
 import Layout from "../components/sections/Layout"
+import EditExercise from "../pages/EditExercise"
 
 const Routes = createBrowserRouter([
 
@@ -36,7 +37,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/exercises/edit/:id",
-        element: <AddExercise />,
+        element: <EditExercise />,
       },
       {
         path: "/exercises/:id",

@@ -217,10 +217,10 @@ const AddExerciseForm = () => {
           <div>
             <label className="text-[14px] text-[#D1D5DB] font-[400] mb-2">Form Tips</label>
             <textarea
-              name="formTips"
+              name="tips"
               value={form.tips}
               onChange={handleChange}
-              placeholder='Key form cues and technique tips...'
+              placeholder='Key form cues and technique tips...(Enter new tip on new line)'
               rows="4"
               className='w-full mt-2 px-4 py-3 rounded-xl border border-[#4B556380] bg-[#37415180] text-white placeholder-[#9CA3AF] focus:outline-none focus:border-green-500 font-[400] text-[15px]'
             ></textarea>
@@ -231,7 +231,7 @@ const AddExerciseForm = () => {
               name="safetyNotes"
               value={form.safetyNotes}
               onChange={handleChange}
-              placeholder='Important safety considerations and warnings...'
+              placeholder='Important safety considerations and warnings...(Enter new tip on new line)'
               rows="4"
               className='w-full mt-2 px-4 py-3 rounded-xl border border-[#4B556380] bg-[#37415180] text-white placeholder-[#9CA3AF] focus:outline-none   focus:border-green-500 font-[400] text-[15px]'
             ></textarea>
@@ -241,8 +241,7 @@ const AddExerciseForm = () => {
       <div className="flex justify-end mt-6">
         <button
           type="submit"
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-xl transition-all"
-        >
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-xl transition-all">
           Add Exercise
         </button>
       </div>

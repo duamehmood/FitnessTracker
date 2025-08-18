@@ -18,7 +18,7 @@ export const exercises = [
             "Pause briefly and push the bar upward until arms are extended",
             "Keep core tight and avoid arching excessively"
         ],
-        "formTips": [
+        "tips": [
             "Keep your shoulder blades retracted and pressed into the bench",
             "Maintain tension in your legs and glutes throughout the lift",
             "Lower the bar slowly with control, don’t drop it",
@@ -50,7 +50,7 @@ export const exercises = [
             "Keep chest up and knees aligned with toes",
             "Push through heels to return to standing position"
         ],
-        "formTips": [
+        "tips": [
             "Keep chest up and core engaged at all times",
             "Push your knees outwards to stay aligned with your toes",
             "Sit back into your hips instead of letting knees shoot forward",
@@ -82,7 +82,7 @@ export const exercises = [
             "Lift bar by pushing through heels, extending hips and knees",
             "Lock out at the top, then return bar to ground with control"
         ],
-        "formTips": [
+        "tips": [
             "Keep the bar close to your shins throughout the lift",
             "Engage your lats to keep the bar path straight",
             "Push through the floor rather than pulling with your back",
@@ -114,7 +114,7 @@ export const exercises = [
             "Pause briefly at the top position",
             "Lower yourself slowly with control"
         ],
-        "formTips": [
+        "tips": [
             "Engage your core to reduce swinging",
             "Pull with your back muscles, not just your arms",
             "Keep elbows tucked close to your body",
