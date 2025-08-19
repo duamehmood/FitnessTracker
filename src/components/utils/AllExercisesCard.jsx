@@ -1,5 +1,5 @@
 
-import { RiDeleteBin5Fill, RiDeleteBinLine } from '@remixicon/react';
+import { RiDeleteBinLine } from '@remixicon/react';
 import { Link } from 'react-router-dom';
 
 const colorArr = [

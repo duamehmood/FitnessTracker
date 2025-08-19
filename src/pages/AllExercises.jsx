@@ -15,12 +15,11 @@ const AllExercises = () => {
     const getExercises = async () => {
       const data = await fetchExercises();
       setExercises(data);
-      setFilteredExercises(data); // initially show all
+      setFilteredExercises(data);  
     };
     getExercises();
   }, []);
 
-  // handle category filter
   const handleFilter = (category) => {
     setSelectedCategory(category);
     if (category === "All") {
@@ -28,9 +27,7 @@ const AllExercises = () => {
     } else {
       setFilteredExercises(
         exercises.filter(ex => 
-          ex.primaryMuscle?.toLowerCase() === category.toLowerCase()
-        )
-      );
+          ex.primaryMuscle?.toLowerCase() === category.toLowerCase() ));
     }
   };
 
@@ -44,8 +41,6 @@ const AllExercises = () => {
 
       <div className='bg-primary py-[50px]'>
         <div className="container mx-auto">
-
-          {/* Search Box */}
           <div className='p-[25px] border border-[#37415166] rounded-2xl bg-[#1F293766] '>
             <div className='flex items-center gap-2 pb-4'>
               <div className='w-10 h-10 border border-[#3B82F64D] rounded-lg flex items-center justify-center  bg-[#3B82F633]'>
@@ -56,11 +51,8 @@ const AllExercises = () => {
             <input 
               type="text" 
               placeholder='Search exercises...' 
-              className='px-4 py-3 rounded-xl bg-[#37415180] text-white placeholder-[#9CA3AF] font-[400] text-[15px] border border-[#4B556380] focus:outline-none focus:border-green-500 md:w-[320px] w-200px ' 
-            />
+              className='px-4 py-3 rounded-xl bg-[#37415180] text-white placeholder-[#9CA3AF] font-[400] text-[15px] border border-[#4B556380] focus:outline-none focus:border-green-500 md:w-[320px] w-200px ' />
           </div>
-
-          {/* Filter Buttons */}
           <div className='bg-[#1F293766] border border-[#37415166] my-[24px] rounded-2xl text-[#9CA3AF] font-[400] text-[14px] p-2'>
             <div className="flex flex-wrap gap-2">
               {["All","Chest","Back","Shoulders","Arms","Legs"].map(category => (
@@ -70,22 +62,16 @@ const AllExercises = () => {
                   className={`px-[16px] py-[12px] rounded-lg transition-all duration-200 cursor-pointer ${
                     selectedCategory === category
                       ? "border border-[#22C55E4D] bg-[#22C55E33] text-[#4ADE80]"
-                      : "hover:bg-[#3741514D] hover:text-white"
-                  }`}
-                >
+                      : "hover:bg-[#3741514D] hover:text-white" }`}>
                   {category}
                 </button>
               ))}
             </div>
           </div>
-
-          {/* Exercises Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredExercises.map((exercise, index) => (
               <AllExercisesCard key={exercise.id} exercise={exercise} index={index} />
             ))}
-            
-            {/* Add Custom Exercise Button */}
             <div className='p-[25px] bg-[#1F293766] border-dashed border-[#37415166] border-2 hover:border-[#22C55E80]  rounded-2xl transition-all text-center'>
               <Link to="/exercises/add">
                 <div className='rounded-lg w-12 h-12 flex justify-center items-center border border-[#22C55E4D] bg-gradient-to-r from-[#22C55E33] to-[#16A34A33] mx-auto'>
@@ -100,7 +86,6 @@ const AllExercises = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
