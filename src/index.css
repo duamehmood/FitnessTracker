@@ -10,6 +10,14 @@
     --color-secondary: #22C55E;
   }
 
+  /* Add in your tailwind.css file */
+  .text-gradient-3 {
+    text: linear-gradient(to right, #4ADE80, #10B981, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
   .container {
     padding: 0 16px;
   }

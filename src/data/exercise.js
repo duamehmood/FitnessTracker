@@ -129,3 +129,42 @@ export const exercises = [
         ]
     }
 ];
+
+export const features = [
+    {
+    "id": 1,
+    "icon": "📊",
+    "title": "Smart Analytics",
+    "desc": "Track volume, calories, and progress with intelligent calculations and beautiful    visualizations."
+    },
+    {
+    "id": 2,
+    "icon": "💪",
+    "title": "Exercise Library",
+    "desc": "Comprehensive database of exercises with custom additions and detailed tracking capabilities."
+    },
+     {
+    "id": 3,
+    "icon": "📝",
+    "title": "Workout Planner",
+    "desc": "Create detailed workout plans with dynamic sets, reps, and weight tracking for optimal results."
+    },
+     {
+    "id": 4,
+    "icon": "⏱️",
+    "title": "Live Tracking",
+    "desc": "Real-time workout session tracking with instant progress updates and performance metrics."
+    },
+     {
+    "id": 5,
+    "icon": "📈",
+    "title": "Progress History",
+    "desc": "Comprehensive workout history with personal records and visual progress tracking."
+    },
+     {
+    "id": 6,
+    "icon": "⚙️",
+    "title": "Personalization",
+    "desc": "Customizable preferences, themes, and goal-based optimization for your unique fitness journey."
+    },
+]
