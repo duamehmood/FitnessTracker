@@ -9,7 +9,7 @@ const Ready = () => {
                         Fitness?</h4>
                     <p className='text-[18px] font-[400] text-[#D1D5DB] pt-4 pb-5 px-82 '>Join thousands of athletes who have revolutionized their fitness journey with FitTracker
                         Pro - completely free!</p>
-                    <div className="flex sm:flex-row flex-col justify-center items-center lg:gap-4 gap-3">
+                    <div className="flex sm:flex-row flex-col justify-center items-center lg:gap-4 gap-2">
                         <button className='font-bold sm:text-[16px] text-[14px]  cursor-pointer rounded-full px-[30px] py-[10px] bg-white text-[#0F172A] sm:w-auto w-full '>Start Now</button>
                         <button className='font-bold sm:text-[16px] text-[14px] border-2 border-[#4B5563] rounded-full px-[30px] py-[10px] cursor-pointer text-[#dbe0e6] sm:w-auto w-full'>Learn More</button>
                     </div>
