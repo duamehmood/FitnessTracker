@@ -40,7 +40,7 @@ const ReviewsCard = ({ review, index }) => {
                     </p>
                 </div>
             </div>
-            <p className='text-[#D1D5DB] text-[14px] text-start pb-7'>
+            <p className='text-[#D1D5DB] text-[14px] font-[400] text-start pb-7'>
                 {review.desc}
             </p>
             <div className='flex items-center gap-1'>
