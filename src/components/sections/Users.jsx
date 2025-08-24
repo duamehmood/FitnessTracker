@@ -2,7 +2,7 @@ import React from 'react'
 
 const Users = () => {
     return (
-        <div className='bg-primary lg:py-[100px] md:py-[70px] py-[50px] text-center '>
+        <div className='bg-primary lg:py-[70px] py-[50px] text-center '>
             <div className="container mx-auto">
                 <div className="flex flex-wrap justify-around items-center gap-6">
                     <div>
