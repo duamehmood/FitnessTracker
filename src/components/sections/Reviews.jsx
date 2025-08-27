@@ -9,7 +9,7 @@ const reviews = [
         "initial": "A",
         "name": "Alex Johnson",
         "profession": "Professional Athlete",
-        "desc": "FitTracker Pro revolutionized my training. The analytics helped me  optimize my performance."
+        "desc": "FitTracker Pro revolutionized my training. The analytics helped me identify weak points and  performance."
     },
     {
         "id": 2,
@@ -30,7 +30,7 @@ const reviews = [
         "initial": "A",
         "name": "Alex Johnson",
         "profession": "Professional Athlete",
-        "desc": "FitTracker Pro revolutionized my training. The analytics helped me  optimize my performance."
+        "desc": "FitTracker Pro revolutionized my training. The analytics helped me identify weak points and performance."
     },
     {
         "id": 5,
@@ -56,8 +56,8 @@ const settings = {
     arrows: false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 3000,
+    slidesToScroll: 3,
+    speed: 7000,
     autoplay: true,
     autoplaySpeed: 0,
     cssEase: 'linear',
@@ -96,7 +96,7 @@ const Reviews = () => {
         <div className='bg-primary lg:py-[100px] md:py-[70px] py-[50px] text-center '>
             <div className="container mx-auto">
                 <div>
-                    <h2 className='text-white font-bold lg:text-[35px] md:text-[30px] text-[25px] text-center '> What Athletes <span className='bg-gradient-to-r from-[#4ADE80] to-[#60A5FA] bg-clip-text text-transparent '> Say</span> </h2>
+                    <h2 className='text-white font-bold lg:text-[35px] md:text-[30px] text-[25px] text-center leading-[110%] '> What Athletes <span className='bg-gradient-to-r from-[#4ADE80] to-[#60A5FA] bg-clip-text text-transparent '> Say</span> </h2>
                     <p className='text-[16px] font-[400] text-[#9CA3AF] 2xl:px-105 xl:px-85 lg:px-55 sm:px-20 pt-2 text-center lg:pb-15 md:pb-10 pb-6'>Join thousands of satisfied users who transformed their fitness journey</p>
 
                     <Slider {...settings}>
