@@ -1,5 +1,5 @@
 
-import { RiAddLine, RiSearchLine } from "@remixicon/react"
+import { RiAddLine } from "@remixicon/react"
 import Navbar from "../components/sections/Navbar"
 import AllWorkoutsCard from '../components/utils/AllWorkoutsCard'
 import { fetchWorkouts } from '../api/workout';
@@ -35,8 +35,6 @@ const handleFilter = (category) => {
   return (
     <div>
       <Navbar title=" All Workouts" >
-        <button ><RiSearchLine className="border-2  w-[30px] md:w-[35px] h-[30px] md:h-[35px]  md:p-[8px] p-[5px] text-[#22C55E] rounded-md " /> </button>
-        <button ><RiAddLine  className="border-2  w-[30px] md:w-[35px] h-[30px] md:h-[35px] text-[#2563EB] md:p-[8px] p-[5px] rounded-md " /> </button>
       </Navbar>
 
       <div className='bg-primary py-[50px]'>
@@ -49,7 +47,11 @@ const handleFilter = (category) => {
               </div>
               <h3 className='font-bold md:text-[20px] text-[18px] text-white'>My Workout Plans</h3>
             </div>
-            <p className=" text-[#9CA3AF] font-[400] text-[14px] ">Choose a workout plan to start your training session or create a new one.</p>
+            <p className=" text-[#9CA3AF] font-[400] text-[14px] pb-3">Choose a workout plan to start your training session or create a new one.</p>
+            <input 
+              type="text" 
+              placeholder='Search exercises...' 
+              className='px-4 py-3 rounded-xl bg-[#37415180] text-white placeholder-[#9CA3AF] font-[400] text-[15px] border border-[#4B556380] focus:outline-none focus:border-green-500 md:w-[320px] w-200px ' />
           </div>
           <div className='bg-[#1F293766] border border-[#37415166] my-[24px] rounded-2xl text-[#9CA3AF] font-[400] text-[14px] p-2'>
             <div className="flex flex-wrap gap-2">

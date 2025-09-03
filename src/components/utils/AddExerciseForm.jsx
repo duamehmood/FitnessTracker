@@ -1,4 +1,4 @@
- import React, { useState } from 'react'
+ import { useState } from 'react'
 import { addExercise } from '../../api/exercise';
 
 const AddExerciseForm = () => {
@@ -195,7 +195,7 @@ const AddExerciseForm = () => {
         </div>
       </div>
 
-      <div className="py-[32px]"></div>
+      <div className="py-[20px]"></div>
 
       <div className="bg-[#1F293766] border border-[#37415166] rounded-2xl p-[25px] backdrop-blur-12">
         <h3 className='font-bold md:text-[20px] text-[18px] text-white pb-[25px]'>Step-by-Step Instructions</h3>
@@ -209,7 +209,7 @@ const AddExerciseForm = () => {
         ></textarea>
       </div>
 
-      <div className="py-[32px]"></div>
+      <div className="py-[20px]"></div>
 
       <div className="bg-[#1F293766] border border-[#37415166] rounded-2xl p-[25px] backdrop-blur-12">
         <h3 className='font-bold md:text-[20px] text-[18px] text-white pb-[25px]'>Tips & Safety Notes</h3>
@@ -238,10 +238,10 @@ const AddExerciseForm = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end mt-6">
+      <div className="flex justify-center mt-6">
         <button
           type="submit"
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-xl transition-all">
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-7 rounded-md transition-all">
           Add Exercise
         </button>
       </div>

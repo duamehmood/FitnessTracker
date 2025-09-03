@@ -29,6 +29,12 @@ const colorArr = [
 const AllWorkoutsCard = ({ workout, index }) => {
     const color = colorArr[index % 4];
 
+    // number of exercises
+    const exerciseCount = workout.exercises.length;
+
+    // number of sets (sum of all sets inside exercises)
+    const setCount = workout.exercises.reduce((acc, ex) => acc + ex.sets.length, 0);
+
     return (
         <div className={`p-[25px] bg-[#1F293766] border border-[#37415166] ${color.hover} rounded-2xl transition-all`}>
             <Link to={`/workouts/${workout.id}`}>
@@ -45,18 +51,14 @@ const AllWorkoutsCard = ({ workout, index }) => {
                 </div>
                 <p className="text-[13px] text-[#9CA3AF] font-[400] pb-[18px]">{workout.desc}</p>
 
-                <div className="flex items-center justify-between pb-4">
+                <div className="flex items-center justify-around text-center pb-4">
                     <div>
-                        <span className='text-[18px] fon-bold text-[#4ADE80] ' >{workout.exercises} </span>
+                        <span className='text-[18px] font-bold text-[#FB923C] ' >{exerciseCount} </span>
                         <p className="text-[#9CA3AF] text-[11px] font-[400] ">Exercises</p>
                     </div>
                     <div>
-                        <span className='text-[18px] fon-bold text-[#60A5FA] '>{workout.sets} </span>
+                        <span className='text-[18px] font-bold text-[#60A5FA] '>{setCount} </span>
                         <p className="text-[#9CA3AF] text-[11px] font-[400] ">Sets</p>
-                    </div>
-                    <div>
-                        <span className='text-[18px] fon-bold text-[#FB923C] '>{workout.duration} </span>
-                        <p className="text-[#9CA3AF] text-[11px] font-[400] ">Duration</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-3">
