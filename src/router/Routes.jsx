@@ -11,6 +11,7 @@ import ActiveWorkout from "../pages/ActiveWorkout"
 import Home from "../pages/Home"
 import Layout from "../components/sections/Layout"
 import EditExercise from "../pages/EditExercise"
+import EditWorkout from "../pages/EditWorkout"
 
 const Routes = createBrowserRouter([
 
@@ -53,11 +54,11 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/workouts/edit/:id",
-        element: <WorkOutDetails />,
+        element: <EditWorkout />,
       },
       {
         path: "/workouts/:id",
-        element: <RecentWorkouts />,
+        element: <WorkOutDetails />,
       },
       {
         path: "/workouts/active",
@@ -65,7 +66,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/workouts/recent",
-        element: <ActiveWorkout />,
+        element: <RecentWorkouts />,
       },
 
     ]
