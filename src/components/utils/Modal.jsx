@@ -22,6 +22,7 @@ const Modal = ({ onClose, selectedExercises, setSelectedExercises }) => {
                     <h2 className="text-lg font-bold text-white">Select Exercise</h2>
                     <button
                         onClick={onClose}
+                        type="button"
                         className="p-2 rounded-lg hover:bg-[#374151] transition-all"
                     >
                         <RiCloseFill className="text-[#9CA3AF] hover:text-red-400" size={22} />
@@ -50,6 +51,7 @@ const Modal = ({ onClose, selectedExercises, setSelectedExercises }) => {
                                         setSelectedExercises([...selectedExercises, exercise]);
                                         onClose();
                                     }}
+                                    type="button"
                                     className="px-2 py-1.5 text-[13px] bg-gradient-to-r from-[#22C55E] to-[#16A34A] text-white rounded-lg font-medium hover:opacity-90 transition-all"
                                 >
                                     <RiAddLine/>
