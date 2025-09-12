@@ -5,7 +5,7 @@ function Navbar({ title, children }) {
 
         <div className="flex items-center justify-between py-[15px]">
           <div className="flex items-center gap-2">
-            <span className="bg-secondary text-white font-[700] w-7 h-7 flex items-center justify-center rounded">
+            <span className="bg-secondary text-white font-[700] text-[20px] w-8 h-8 flex items-center justify-center rounded-lg">
               F
             </span>
             <span className="font-[700] md:text-[22px] text-[20px] text-secondary">{title}</span>
